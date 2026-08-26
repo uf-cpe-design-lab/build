@@ -1,0 +1,114 @@
+name: 3D Print Request
+description: Request a part to be printed
+title: "[Print]: "
+labels: ["print-request", "queued"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Attach your model as a **.zip** (GitHub blocks bare .stl/.3mf uploads).
+        Drag it into the field below — the bot will slice it and post a time/cost estimate.
+
+  - type: textarea
+    id: model_url
+    attributes:
+      label: Model file
+      description: Drag & drop your .zip here, or paste a link.
+      placeholder: |
+        Drop the file in this box — GitHub will replace it with a link.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: material
+    attributes:
+      label: Material
+      options:
+        - PLA
+        - PETG
+        - ABS
+        - TPU
+        - ASA
+      default: 0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: layer_height
+    attributes:
+      label: Layer height
+      options:
+        - "0.12 mm (fine)"
+        - "0.20 mm (standard)"
+        - "0.28 mm (draft)"
+      default: 1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: infill
+    attributes:
+      label: Infill
+      options:
+        - "10%"
+        - "20%"
+        - "40%"
+        - "100%"
+      default: 1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: supports
+    attributes:
+      label: Supports
+      options:
+        - "Auto (slicer decides)"
+        - "No supports"
+        - "Everywhere"
+        - "Build plate only"
+      default: 0
+
+  - type: input
+    id: quantity
+    attributes:
+      label: Quantity
+      placeholder: "1"
+      value: "1"
+    validations:
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: Needed by
+      placeholder: "2026-08-01 or 'no rush'"
+
+  - type: dropdown
+    id: color
+    attributes:
+      label: Color preference
+      options:
+        - "Any"
+        - "Black"
+        - "White"
+        - "Grey"
+        - "Other (note below)"
+      default: 0
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Orientation constraints, strength requirements, post-processing, tolerances
+      placeholder: "Hole on top face is a press fit for an M3 heat-set insert — needs to be dimensionally accurate."
+
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: Model is manifold and correctly scaled in mm
+          required: true
+        - label: I understand the estimate is automated and may be revised
+          required: true
