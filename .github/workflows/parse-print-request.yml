@@ -35,7 +35,7 @@ jobs:
 
             const printRequest = parseIssue(body, template);
 
-            console.log(JSON.stringify(parsed, null, 2)); 
+            console.log(JSON.stringify(printRequest, null, 2)); 
             
             const modelUrl    = printRequest['model_url'];
             const material    = printRequest['material'];
@@ -50,10 +50,10 @@ jobs:
 
             const comment = `
             ##Print Request
-            modelURL: $(modelURL)
-            material: $(material)
-            color: $(color)
-            notes: $(notes) 
+            modelURL: ${modelUrl}
+            material: ${material}
+            color: ${color}
+            notes: ${notes} 
             `;
 
             await github.rest.issues.createComment({
