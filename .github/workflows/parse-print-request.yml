@@ -7,7 +7,7 @@ on:
 jobs:
   parse-and-comment:
     if: contains(github.event.issue.labels.*.name, 'print-request')
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
