@@ -32,6 +32,6 @@ jobs:
 
       - run: cat order.json
 
-      - run: gh issue comment $ISSUE --body "This is a test!"
+      - run: gh issue comment {{ github.event.issue.number }} --body "This is a test!"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
