@@ -4,6 +4,8 @@ on:
   issues:
     types: [opened, edited]
 
+concurrency: 'main'
+
 permissions:
   issues: write
 
@@ -21,44 +23,17 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install issue-parser
-        run: npm install @github/issue-parser
-
-      - name: Parse issue and Estimate
-        uses: actions/github-script@v7
+      - uses: stefanbuck/github-issue-parser@v3
+        id: issue-parser
         with:
-          script: |
-            const { parseIssue } = require('@github/issue-parser');
+          template-path: .github/ISSUE_TEMPLATE/print-request.yml
+    
+      - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
 
-            const body = context.payload.issue.body;
-            const template = require('fs').readFileSync('.github/ISSUE_TEMPLATE/print-request.yml', 'utf8');
+      - run: cat order.json
 
-            const printRequest = parseIssue(body, template);
-
-            console.log(JSON.stringify(printRequest, null, 2)); 
-            
-            const modelUrl    = printRequest['model_url'];
-            const material    = printRequest['material'];
-            const layerHeight = printRequest['layer_height'];
-            const infill      = printRequest['infill'];
-            const supports    = printRequest['supports'];
-            const quantity    = parseInt(printRequest['quantity']) || 1;
-            const deadline    = printRequest['deadline'];
-            const color       = printRequest['color'];
-            const notes       = printRequest['notes'];
-            const ack         = printRequest['ack'];
-
-            const comment = `
-            ##Print Request
-            modelURL: ${modelUrl}
-            material: ${material}
-            color: ${color}
-            notes: ${notes} 
-            `;
-
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              body: comment
-            });
+     -  run: gh issue comment $ISSUE --body "This is a test!"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+          ISSUE: ${{ github.events.issue.html_url }} 
+      
