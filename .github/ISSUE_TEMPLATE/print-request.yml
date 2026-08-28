@@ -39,9 +39,9 @@ body:
       label: Layer height
       options:
         - "0.12 mm (fine)"
+        - "0.15mm"
         - "0.20 mm (standard)"
-        - "0.28 mm (draft)"
-      default: 1
+      default: 2
     validations:
       required: true
 
@@ -51,10 +51,11 @@ body:
       label: Infill
       options:
         - "10%"
+        - "15%"
         - "20%"
         - "40%"
         - "100%"
-      default: 1
+      default: 2
     validations:
       required: true
 
@@ -82,7 +83,7 @@ body:
     id: deadline
     attributes:
       label: Needed by
-      placeholder: "2026-08-01 or 'no rush'"
+      placeholder: "2026-08-01, leave empty for 'no rush'"
 
   - type: dropdown
     id: color
