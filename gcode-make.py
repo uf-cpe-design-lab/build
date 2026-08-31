@@ -8,9 +8,8 @@ with open("request.json", "r") as file:
 text = request["model_url"]
 url = re.search(r'\((https?://[^\)]+)\)', text).group(1)
 
-subprocess.run(f"curl -L -o file.zip {url}") # Download file
-
-subprocess.run("unzip file.zip") # Unzip file
+subprocess.run(["curl", "-L", "-o", "file.zip", "-A", "Mozilla/5.0", url])  # Download file
+subprocess.run(["unzip", "file.zip"])  # Unzip file
 
 # Supports
 match request["supports"].lower():
@@ -26,15 +25,17 @@ match request["supports"].lower():
 # Height parse
 height = request["layer_height"].split(" ")[0]
 
-subprocess.run([
-"prusa-slicer",
-"--export-gcode",
-"--layer-height", request["height"],
-"--fill-density", request["infill"],
-"--material-profile", request["material"],
-support,
-"--output output.gcode"
-])
+cmd = [
+    "prusa-slicer",
+    "--export-gcode",
+    "--layer-height", height,
+    "--fill-density", request["infill"],
+    "--material-profile", request["material"],
+    "--output", "output.gcode"
+]
+if support:
+    cmd.extend(support.split())
+subprocess.run(cmd)
 
 # Time parsing
 with open("output.gcode", "r") as f:
