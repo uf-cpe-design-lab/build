@@ -1,6 +1,7 @@
 import json
 import subprocess
 import re
+import glob
 
 with open("request.json", "r") as file:
     request = json.load(file)
@@ -25,17 +26,19 @@ match request["supports"].lower():
 # Height parse
 height = request["layer_height"].split(" ")[0]
 
+stl_files = glob.glob("*.stl")
+
 cmd = [
     "prusa-slicer",
     "--export-gcode",
     "--layer-height", height,
     "--fill-density", request["infill"],
-    "--material-profile", request["material"],
-    "--output", "output.gcode"
-]
+    "--output", "output.gcode",
+] + stl_files
+
 if support:
     cmd.extend(support.split())
-subprocess.run(cmd)
+subprocess.run(cmd, capture_output=True, text=True)
 
 # Time parsing
 with open("output.gcode", "r") as f:
