@@ -24,7 +24,7 @@ jobs:
           node-version: '20'
 
       - name: Install packages
-        run: sudo apt install zip jq prusa-slicer -y
+        run: sudo apt install python3 curl unzip jq prusa-slicer -y
 
       - uses: stefanbuck/github-issue-parser@v3
         id: issue-parser
