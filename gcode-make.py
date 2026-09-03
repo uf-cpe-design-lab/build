@@ -210,7 +210,6 @@ else:
     match = re.search(r"estimated printing time \(normal mode\) = (.+)", content)
     if match:
         time = match.group(1)
-WebWork Accessibility
     with open("comment", "x", encoding="utf-8") as f:
         f.write(f"""
 Print request successful!
