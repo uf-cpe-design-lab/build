@@ -3,6 +3,7 @@ import subprocess
 import re
 import glob
 import os
+import requests
 
 with open("request.json", "r") as file:
     request = json.load(file)
@@ -34,66 +35,6 @@ def graphql(query, variables={}):
     )
     return response.json()
 
-def add_to_project_queued(print_time, needed_by):
-    result = graphql("""
-        query($owner: String!, $number: Int!) {
-            organization(login: $owner) {
-                projectV2(number: $number) {
-                    id
-                    fields(first: 20) {
-                        nodes {
-                            ... on ProjectV2SingleSelectField {
-                                id
-                                name
-                                options { id name }
-                            }
-                            ... on ProjectV2Field {
-                                id
-                                name
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    """, {"owner": REPO_OWNER, "number": PROJECT_NUMBER})
-
-    project = result["data"]["organization"]["projectV2"]
-    project_id = project["id"]
-    fields = project["fields"]["nodes"]
-
-    status_field = next(f for f in fields if f.get("name") == "Status")
-    queued_option_id = next(o["id"] for o in status_field["options"] if o["name"] == "Queued")
-    print_time_field = next(f for f in fields if f.get("name") == "Print Time")
-    needed_by_field = next(f for f in fields if f.get("name") == "Needed By")
-
-    add_result = graphql("""
-        mutation($projectId: ID!, $contentId: ID!) {
-            addProjectV2ItemById(input: {projectId: $projectId, contentId: $contentId}) {
-                item { id }
-            }
-        }
-    """, {"projectId": project_id, "contentId": ISSUE_NODE_ID})
-
-    item_id = add_result["data"]["addProjectV2ItemById"]["item"]["id"]
-
-    def update_field(field_id, value):
-        graphql("""
-            mutation($projectId: ID!, $itemId: ID!, $fieldId: ID!, $value: ProjectV2FieldValue!) {
-                updateProjectV2ItemFieldValue(input: {
-                    projectId: $projectId
-                    itemId: $itemId
-                    fieldId: $fieldId
-                    value: $value
-                }) {
-                    projectV2Item { id }
-                }
-            }
-        """, {"projectId": project_id, "itemId": item_id, "fieldId": field_id, "value": value})
-
-    update_field(status_field["id"], {"singleSelectOptionId": queued_option_id})
-    update_field(print_time_field["id"], {"text": print_time})
-    update_field(needed_by_field["id"], {"date": needed_by})
 def add_to_project_queued(print_time, needed_by):
     result = graphql("""
         query($owner: String!, $number: Int!) {
@@ -217,4 +158,4 @@ Print request successful!
 Your estimated print time is: {time}
 """)
 
-        add_to_project_queued(time, request["deadline"] if request["deadline"] else None)
+    add_to_project_queued(time, request["deadline"] if request["deadline"] else None)
