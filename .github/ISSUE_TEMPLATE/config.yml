@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Printer status / queue
-    url: https://github.com/OWNER/REPO/projects/1
+    url: https://github.com/orgs/uf-cpe-design-lab/projects/3/views/1 
     about: Check where your job is in the queue before filing.
   - name: Questions & design help
     url: https://github.com/OWNER/REPO/discussions
