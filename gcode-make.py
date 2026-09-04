@@ -24,7 +24,7 @@ def close_issue():
     requests.patch(
         f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/issues/{ISSUE_NUMBER}",
         headers=headers,
-        json={"state": "closed"}
+        json={"state": "closed", "state_reason": "not_planned"}
     )
 
 def graphql(query, variables={}):
