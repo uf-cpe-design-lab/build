@@ -1,4 +1,4 @@
-name: Parse print request
+name: 3D Print Request, Time Estimate
 
 on:
   issues:
@@ -16,23 +16,20 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          node-version-file: '3d-print/package.json'
+        uses: actions/checkout@v5
 
       - name: Install packages
-        run: sudo apt install python3 curl unzip jq prusa-slicer -y
+        run: sudo apt-get install -y python3 curl unzip jq prusa-slicer
 
       - uses: stefanbuck/github-issue-parser@v3
         id: issue-parser
         with:
           template-path: .github/ISSUE_TEMPLATE/print-request.yml
     
-      - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > request.json
+      - name: Write request.json
+        env:
+          REQUEST_JSON: ${{ steps.issue-parser.outputs.jsonString }}
+        run: printf '%s' "$REQUEST_JSON" > request.json
 
       - run: cat request.json
 
