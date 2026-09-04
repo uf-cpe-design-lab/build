@@ -131,6 +131,21 @@ if support:
     cmd.extend(support.split())
 try:
     subprocess.run(cmd, check=True)
+    # Time parsing
+    with open("output.gcode", "r") as f:
+        content = f.read()
+
+        time = ""
+        match = re.search(r"estimated printing time \(normal mode\) = (.+)", content)
+        if match:
+            time = match.group(1)
+        with open("comment", "x", encoding="utf-8") as f:
+            f.write(f"""
+    Print request successful!
+    ----------------------------------------------
+    Your estimated print time is: {time}
+    """)
+        add_to_project_queued(time, request["deadline"] if request["deadline"] else None)
 except:
     with open("comment", "x", encoding="utf-8") as f:
         f.write("""
@@ -143,20 +158,3 @@ Please resubmit and ensure the following:
 3. Your file is in a zip archive
 """)
         close_issue()
-else:
-    # Time parsing
-    with open("output.gcode", "r") as f:
-        content = f.read()
-
-    time = ""
-    match = re.search(r"estimated printing time \(normal mode\) = (.+)", content)
-    if match:
-        time = match.group(1)
-    with open("comment", "x", encoding="utf-8") as f:
-        f.write(f"""
-Print request successful!
-----------------------------------------------
-Your estimated print time is: {time}
-""")
-
-    add_to_project_queued(time, request["deadline"] if request["deadline"] else None)
