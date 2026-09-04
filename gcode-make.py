@@ -75,7 +75,8 @@ def add_to_project_queued(print_time, needed_by):
             }
         }
     """, {"projectId": project_id, "contentId": ISSUE_NODE_ID})
-
+    
+    print("Add result: ", json.dumps(add_result, indent=2))
     item_id = add_result["data"]["addProjectV2ItemById"]["item"]["id"]
 
     def update_field(field_id, value):
