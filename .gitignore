@@ -1,5 +1,4 @@
 node_modules/
-*.swp
-*.bak
-*.json
-
+.swp
+.bak
+.json

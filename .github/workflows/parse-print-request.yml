@@ -22,6 +22,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          node-version-file: '3d-print/package.json'
 
       - name: Install packages
         run: sudo apt install python3 curl unzip jq prusa-slicer -y
@@ -35,7 +36,7 @@ jobs:
 
       - run: cat request.json
 
-      - run: python gcode-make.py
+      - run: python 3d-print/gcode-make.py
         env:
           GITHUB_TOKEN: ${{ secrets.PROJECT_TOKEN }}
           REPO_OWNER: ${{ github.repository_owner }}

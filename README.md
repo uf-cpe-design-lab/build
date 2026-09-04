@@ -1,19 +1,20 @@
-# Printer Queue - Computer Engineering Design Lab 
+# CpE Build Requests
 
-## Rules
+If you have any questions regarding build requests, please contact the lab manager:
 
-1. Submit one .stl file at a time for printing
-2. Zip your file before submitting
-3. No illegal or profrain items will be printed
+```
+Robert Conde
+Computer Engineering Design Lab
+Department of Engineering Education
+Herbert Wertheim College of Engineering
+University of Florida
+conder@ufl.edu, 352-294-6945
+```
 
-### Submit a printing job:
+## Getting Started
 
-[Submit a print request!](https://github.com/uf-cpe-design-lab/build/issues/new?template=print-request.yml)
+All requests can be made using GitHub Issues [here](https://github.com/uf-cpe-design-lab/build/issues/new/choose).
 
-### View the printing queue:
+Additionally, you can view the various build queues here:
 
-[Check the queue!](https://github.com/orgs/uf-cpe-design-lab/projects/3/views/1)
-
-### Questions?
-
-[Ask here!](example.org)
+- [3D Printing](https://github.com/orgs/uf-cpe-design-lab/projects/3)
