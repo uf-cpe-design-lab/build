@@ -19,27 +19,13 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: material
-    attributes:
-      label: Material
-      options:
-        - PLA
-        - PETG
-        - ABS
-        - TPU
-        - ASA
-      default: 0
-    validations:
-      required: true
-
-  - type: dropdown
+    - type: dropdown
     id: layer_height
     attributes:
       label: Layer height
       options:
         - "0.12 mm (fine)"
-        - "0.15mm (standard"
+        - "0.15mm (standard)"
         - "0.20 mm (draft)"
       default: 1
     validations:
@@ -86,15 +72,11 @@ body:
       placeholder: "2026-08-01, leave empty for 'no rush'"
 
   - type: dropdown
-    id: color
+    id: filaments
     attributes:
-      label: Color preference
+      label: Select a spool
       options:
         - "Any"
-        - "Black"
-        - "White"
-        - "Grey"
-        - "Other (note below)"
       default: 0
 
   - type: textarea
