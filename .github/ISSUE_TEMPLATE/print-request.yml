@@ -39,9 +39,9 @@ body:
       label: Layer height
       options:
         - "0.12 mm (fine)"
-        - "0.15mm"
-        - "0.20 mm (standard)"
-      default: 2
+        - "0.15mm (standard"
+        - "0.20 mm (draft)"
+      default: 1
     validations:
       required: true
 
@@ -55,7 +55,7 @@ body:
         - "20%"
         - "40%"
         - "100%"
-      default: 2
+      default: 1
     validations:
       required: true
 
@@ -64,10 +64,10 @@ body:
     attributes:
       label: Supports
       options:
-        - "Auto (slicer decides)"
         - "No supports"
         - "Everywhere"
         - "Build plate only"
+        - "Support blockers (leave note)"
       default: 0
 
   - type: input
@@ -112,4 +112,17 @@ body:
         - label: Model is manifold and correctly scaled in mm
           required: true
         - label: I understand the estimate is automated and may be revised
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        # Terms & Conditions
+        Process & Timeline: Requests are received immediately by form submission and typically resolved within a business week (5 business days). Although best effort is made to ensure that you receive notice when the item(s) are completed, no guarantees are given.
+        With regards to CpE Design 1 & 2: By submitting this form, I understand that I do not release responsibility for making progress and completing milestones on time, regardless of the outcome of this request. In other words, in the case that the acquisition of the requested items is denied or is indefinitely delayed (for whatever reason), you understand that you are still responsible for making adequate progress.
+  - type: checkboxes
+    id: ack_terms
+    attributes:
+      label: Terms & Conditions
+      options:
+        - label: I understand and agree to the implications and terms above.
           required: true

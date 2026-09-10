@@ -105,14 +105,14 @@ subprocess.run(["unzip", "file.zip"])  # Unzip file
 
 # Supports
 match request["supports"].lower():
-    case "auto (slicer decides)":
-        support = "--support-material --support-material-auto"
     case "no supports":
         support = ""
     case "everywhere":
         support = "--support-material"
     case "build plate only":
         support = "--support-material --support-material-buildplate-only"
+    case "support blockers (leave note)":
+        support = "";
 
 # Height parse
 height = request["layer_height"].split(" ")[0]
