@@ -19,17 +19,17 @@ body:
     validations:
       required: true
 
-    - type: dropdown
-      id: layer_height
-      attributes:
-        label: Layer height
-        options:
-          - "0.12 mm (fine)"
-          - "0.15mm (standard)"
-          - "0.20 mm (draft)"
-        default: 1
-      validations:
-        required: true
+  - type: dropdown
+    id: layer_height
+    attributes:
+      label: Layer height
+      options:
+        - "0.12 mm (fine)"
+        - "0.15mm (standard)"
+        - "0.20 mm (draft)"
+      default: 1
+    validations:
+      required: true
 
   - type: dropdown
     id: infill
