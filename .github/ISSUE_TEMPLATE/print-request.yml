@@ -76,13 +76,13 @@ body:
   attributes:
     label: Select a spool
     options:
-    - Red
-    - Green
-    - Blue
-    - Yellow
     - Light green
-    - Light light green
-    - lightest green
+    - Army green
+    - Clear
+    - Light pink
+    - Black
+    - Metallic brown
+    - White
     default: 0
 
 - type: textarea
