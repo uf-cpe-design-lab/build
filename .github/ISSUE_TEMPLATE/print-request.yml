@@ -3,108 +3,116 @@ description: Request a part to be printed
 title: "[Print]: "
 labels: ["print-request", "queued"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Attach your model as a **.zip** (GitHub blocks bare .stl/.3mf uploads).
-        Drag it into the field below — the bot will slice it and post a time/cost estimate.
+- type: markdown
+  attributes:
+    value: |
+      Attach your model as a **.zip** (GitHub blocks bare .stl/.3mf uploads).
+      Drag it into the field below — the bot will slice it and post a time/cost estimate.
 
-  - type: textarea
-    id: model_url
-    attributes:
-      label: Model file
-      description: Drag & drop your .zip here, or paste a link.
-      placeholder: |
-        Drop the file in this box — GitHub will replace it with a link.
-    validations:
+- type: textarea
+  id: model_url
+  attributes:
+    label: Model file
+    description: Drag & drop your .zip here, or paste a link.
+    placeholder: |
+      Drop the file in this box — GitHub will replace it with a link.
+  validations:
+    required: true
+
+- type: dropdown
+  id: layer_height
+  attributes:
+    label: Layer height
+    options:
+    - "0.12 mm (fine)"
+    - "0.15mm (standard)"
+    - "0.20 mm (draft)"
+    default: 1
+  validations:
+    required: true
+
+- type: dropdown
+  id: infill
+  attributes:
+    label: Infill
+    options:
+    - "10%"
+    - "15%"
+    - "20%"
+    - "40%"
+    - "100%"
+    default: 1
+  validations:
+    required: true
+
+- type: dropdown
+  id: supports
+  attributes:
+    label: Supports
+    options:
+    - "No supports"
+    - "Everywhere"
+    - "Build plate only"
+    - "Support blockers (leave note)"
+    default: 0
+
+- type: input
+  id: quantity
+  attributes:
+    label: Quantity
+    placeholder: "1"
+    value: "1"
+  validations:
+    required: true
+
+- type: input
+  id: deadline
+  attributes:
+    label: Needed by
+    placeholder: "2026-08-01, leave empty for 'no rush'"
+
+- type: dropdown
+  id: filaments
+  attributes:
+    label: Select a spool
+    options:
+    - Red
+    - Green
+    - Blue
+    - Yellow
+    - Light green
+    - Light light green
+    - lightest green
+    default: 0
+
+- type: textarea
+  id: notes
+  attributes:
+    label: Notes
+    description: Orientation constraints, strength requirements, 
+      post-processing, tolerances
+    placeholder: "Hole on top face is a press fit for an M3 heat-set insert — needs
+      to be dimensionally accurate."
+
+- type: checkboxes
+  id: ack
+  attributes:
+    label: Acknowledgements
+    options:
+    - label: Model is manifold and correctly scaled in mm
       required: true
-
-  - type: dropdown
-    id: layer_height
-    attributes:
-      label: Layer height
-      options:
-        - "0.12 mm (fine)"
-        - "0.15mm (standard)"
-        - "0.20 mm (draft)"
-      default: 1
-    validations:
+    - label: I understand the estimate is automated and may be revised
       required: true
-
-  - type: dropdown
-    id: infill
-    attributes:
-      label: Infill
-      options:
-        - "10%"
-        - "15%"
-        - "20%"
-        - "40%"
-        - "100%"
-      default: 1
-    validations:
+- type: markdown
+  attributes:
+    value: |
+      # Terms & Conditions
+      Process & Timeline: Requests are received immediately by form submission and typically resolved within a business week (5 business days). Although best effort is made to ensure that you receive notice when the item(s) are completed, no guarantees are given.
+      With regards to CpE Design 1 & 2: By submitting this form, I understand that I do not release responsibility for making progress and completing milestones on time, regardless of the outcome of this request. In other words, in the case that the acquisition of the requested items is denied or is indefinitely delayed (for whatever reason), you understand that you are still responsible for making adequate progress.
+- type: checkboxes
+  id: ack_terms
+  attributes:
+    label: Terms & Conditions
+    options:
+    - label: I understand and agree to the implications and terms above.
       required: true
-
-  - type: dropdown
-    id: supports
-    attributes:
-      label: Supports
-      options:
-        - "No supports"
-        - "Everywhere"
-        - "Build plate only"
-        - "Support blockers (leave note)"
-      default: 0
-
-  - type: input
-    id: quantity
-    attributes:
-      label: Quantity
-      placeholder: "1"
-      value: "1"
-    validations:
-      required: true
-
-  - type: input
-    id: deadline
-    attributes:
-      label: Needed by
-      placeholder: "2026-08-01, leave empty for 'no rush'"
-
-  - type: dropdown
-    id: filaments
-    attributes:
-      label: Select a spool
-      options:
-        - "Any"
-      default: 0
-
-  - type: textarea
-    id: notes
-    attributes:
-      label: Notes
-      description: Orientation constraints, strength requirements, post-processing, tolerances
-      placeholder: "Hole on top face is a press fit for an M3 heat-set insert — needs to be dimensionally accurate."
-
-  - type: checkboxes
-    id: ack
-    attributes:
-      label: Acknowledgements
-      options:
-        - label: Model is manifold and correctly scaled in mm
-          required: true
-        - label: I understand the estimate is automated and may be revised
-          required: true
-  - type: markdown
-    attributes:
-      value: |
-        # Terms & Conditions
-        Process & Timeline: Requests are received immediately by form submission and typically resolved within a business week (5 business days). Although best effort is made to ensure that you receive notice when the item(s) are completed, no guarantees are given.
-        With regards to CpE Design 1 & 2: By submitting this form, I understand that I do not release responsibility for making progress and completing milestones on time, regardless of the outcome of this request. In other words, in the case that the acquisition of the requested items is denied or is indefinitely delayed (for whatever reason), you understand that you are still responsible for making adequate progress.
-  - type: checkboxes
-    id: ack_terms
-    attributes:
-      label: Terms & Conditions
-      options:
-        - label: I understand and agree to the implications and terms above.
-          required: true
