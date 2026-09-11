@@ -47,4 +47,29 @@ filament:
   - Clear:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Clear.jpg
       Quantity: 1
-
+  - Army Green Dark:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ArmyGreenDark.jpg
+      Quantity: 1
+  - Jet Black:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/JetBlack.jpg
+      Quantity: 2
+      Type: PLA, TPU 95A
+  - Lipstick Red:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/LipstickRed.jpg
+      Quantity: 3
+      Type: PLA, TPU 95A
+  - Prusa Orange:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/PrusaOrange.jpg
+      Quantity: 1
+  - Pistachio Green:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/PistachioGreen.jpg
+      Quantity: 2
+  - Noctua Beige:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/NoctuaBeige.jpg
+      Quantity: 2
+  - Galaxy Purple:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/GalaxyPurple.jpg
+      Quantity: 1
+  - Gentleman Grey:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/GentlemanGrey.jpg
+      Quantity: 1
