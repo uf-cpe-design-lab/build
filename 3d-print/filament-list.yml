@@ -1,8 +1,15 @@
 filament:
-  - Light green
-  - Army green
+  - Light green:
+      ImageLink:
+      Quantity:
+  - Army green:
+      ImageLink:
+        Quantity:
   - Clear
   - Light pink
   - Black
   - Metallic brown
   - White
+  - Dark grey
+  - Dark brown
+  - Light grey
