@@ -92,6 +92,14 @@ body:
     - Corn pigment
     - Orange
     - Clear
+    - Army Green Dark
+    - Jet Black
+    - Lipstick Red
+    - Prusa Orange
+    - Pistachio Green
+    - Noctua Beige
+    - Galaxy Purple
+    - Gentleman Grey
     default: 0
 
 - type: textarea
