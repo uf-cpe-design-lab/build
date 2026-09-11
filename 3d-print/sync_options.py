@@ -11,7 +11,7 @@ with open(".github/ISSUE_TEMPLATE/print-request.yml") as f:
 
 for field in template["body"]:
     if field.get("id") == "filaments":  # match by id
-        field["attributes"]["options"] = source["filament"]
+        field["attributes"]["options"] = [list(item.keys())[0] for item in source["filament"]]
         break
 
 with open(".github/ISSUE_TEMPLATE/print-request.yml", "w") as f:
