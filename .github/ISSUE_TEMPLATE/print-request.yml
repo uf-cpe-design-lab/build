@@ -76,20 +76,22 @@ body:
   attributes:
     label: Select a spool
     options:
-    - Light green:
-        ImageLink:
-        Quantity:
-    - Army green:
-        ImageLink:
-          Quantity:
-    - Clear
-    - Light pink
+    - Mint green
+    - Army green
+    - ClearYellow
+    - SandWhite
     - Black
     - Metallic brown
     - White
-    - Dark grey
     - Dark brown
-    - Light grey
+    - Risotto pigment
+    - Clear neon green
+    - Urban Grey
+    - Recycled
+    - Algae pigment
+    - Corn pigment
+    - Orange
+    - Clear
     default: 0
 
 - type: textarea
