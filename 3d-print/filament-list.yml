@@ -1,15 +1,50 @@
 filament:
-  - Light green:
-      ImageLink:
-      Quantity:
+  - Mint green:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/MintGreen.jpg
+      Quantity: 2
   - Army green:
-      ImageLink:
-        Quantity:
-  - Clear
-  - Light pink
-  - Black
-  - Metallic brown
-  - White
-  - Dark grey
-  - Dark brown
-  - Light grey
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ArmyGreen.jpg
+      Quantity: 2
+  - ClearYellow:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ClearYellow.JPG
+      Quantity: 1
+  - SandWhite:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/SandWhite.JPG
+      Quantity: 1
+  - Black:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Black.jpg
+      Quantity: 2
+  - Metallic brown:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/MetallicBrown.jpg
+      Quantity: 1
+  - White:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/White.JPG
+      Quantity: 1
+  - Dark brown:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/MetallicBrown.jpg
+      Quantity: 5
+  - Risotto pigment:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/RisottoPigment.jpg
+      Quantity: 2
+  - Clear neon green:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ClearNeonGreen.jpg
+      Quantity: 1
+  - Urban Grey:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/UrbanGrey.jpg
+      Quantity: 3
+  - Recycled:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Recycled.jpg
+      Quantity: 1
+  - Algae pigment: 
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/AlgaePigment.jpg
+      Quantity: 2
+  - Corn pigment:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/CornPigment
+      Quantity: 2 
+  - Orange:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Orange.jpg
+      Quantity: 1
+  - Clear:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Clear.jpg
+      Quantity: 1
+
