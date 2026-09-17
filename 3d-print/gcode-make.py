@@ -117,7 +117,7 @@ match request["supports"].lower():
 # Height parse
 height = request["layer_height"].split(" ")[0]
 
-stl_files = glob.glob("*.stl")
+stl_files = glob.glob("*.[sS][tT][lL]")
 
 cmd = [
     "prusa-slicer",
