@@ -6,7 +6,9 @@ body:
 - type: markdown
   attributes:
     value: |
-      Attach your model as a **.zip** (GitHub blocks bare .stl/.3mf uploads).
+      Attach your model as a **.zip** (GitHub blocks bare .stl uploads).
+      When zipping your .stl please make sure you are ONLY zipping the .stl file.
+      This means no extra directories or other files.
       Drag it into the field below — the bot will slice it and post a time/cost estimate.
 
 - type: textarea
