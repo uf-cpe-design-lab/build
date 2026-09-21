@@ -78,30 +78,27 @@ body:
   attributes:
     label: Select a spool
     options:
-    - Mint green
-    - Army green
-    - ClearYellow
-    - SandWhite
-    - Black
-    - Metallic brown
-    - White
-    - Dark brown
-    - Risotto pigment
-    - Clear neon green
-    - Urban Grey
-    - Recycled
-    - Algae pigment
-    - Corn pigment
-    - Orange
-    - Clear
-    - Army Green Dark
-    - Jet Black
-    - Lipstick Red
-    - Prusa Orange
-    - Pistachio Green
-    - Noctua Beige
-    - Galaxy Purple
-    - Gentleman Grey
+    - Electric Green PETG
+    - Natural PVA
+    - Noctua Beige PLA
+    - Galaxy Black PLA
+    - Mystic Brown PLA
+    - Natural TPU
+    - Risotto pigment PLA
+    - Clear neon green PETG
+    - Urban Grey PETG
+    - Recycled PLA
+    - Algae pigment rPLA
+    - Corn pigment rPLA
+    - Orange PETG for PPE
+    - Clear PETG
+    - Army Green Dark PLA
+    - Jet Black TPU 95A / PLA (Specify in notes)
+    - Lipstick Red PLA / TPU 95A (Specify in notes)
+    - Prusa Orange PLA
+    - Pistachio Green PLA
+    - Galaxy Purple PLA
+    - Gentleman Grey PLA
     default: 0
 
 - type: textarea
