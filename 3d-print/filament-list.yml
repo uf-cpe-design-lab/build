@@ -1,75 +1,66 @@
 filament:
-  - Mint green:
-      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/MintGreen.jpg
+  - Electric Green PETG:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ElectricGreen.jpg
       Quantity: 2
-  - Army green:
-      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ArmyGreen.jpg
+  - Natural PVA:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Natural.JPG
+      Quantity: 1
+  - Noctua Beige PLA:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/NoctuaBeige.JPG
+      Quantity: 3
+  - Galaxy Black PLA:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/GalaxyBlack.jpg
       Quantity: 2
-  - ClearYellow:
-      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ClearYellow.JPG
-      Quantity: 1
-  - SandWhite:
-      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/SandWhite.JPG
-      Quantity: 1
-  - Black:
-      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Black.jpg
-      Quantity: 2
-  - Metallic brown:
-      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/MetallicBrown.jpg
-      Quantity: 1
-  - White:
-      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/White.JPG
-      Quantity: 1
-  - Dark brown:
-      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/MetallicBrown.jpg
+  - Mystic Brown PLA:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/MysticBrown.jpg
       Quantity: 5
-  - Risotto pigment:
+  - Natural TPU:
+      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/NaturalTPU.JPG
+      Quantity: 1
+  - Risotto pigment PLA:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/RisottoPigment.jpg
       Quantity: 2
-  - Clear neon green:
+  - Clear neon green PETG:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ClearNeonGreen.jpg
       Quantity: 1
-  - Urban Grey:
+  - Urban Grey PETG:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/UrbanGrey.jpg
       Quantity: 3
-  - Recycled:
+  - Recycled PLA:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Recycled.jpg
       Quantity: 1
-  - Algae pigment: 
+  - Algae pigment rPLA: 
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/AlgaePigment.jpg
       Quantity: 2
-  - Corn pigment:
+  - Corn pigment rPLA:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/CornPigment
       Quantity: 2 
-  - Orange:
+  - Orange PETG for PPE:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Orange.jpg
       Quantity: 1
-  - Clear:
+  - Clear PETG:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Clear.jpg
       Quantity: 1
-  - Army Green Dark:
+  - Army Green Dark PLA:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ArmyGreenDark.jpg
       Quantity: 1
-  - Jet Black:
+  - Jet Black TPU 95A / PLA (Specify in notes):
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/JetBlack.jpg
       Quantity: 2
       Type: PLA, TPU 95A
-  - Lipstick Red:
+  - Lipstick Red PLA / TPU 95A (Specify in notes):
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/LipstickRed.jpg
       Quantity: 3
       Type: PLA, TPU 95A
-  - Prusa Orange:
+  - Prusa Orange PLA:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/PrusaOrange.jpg
       Quantity: 1
-  - Pistachio Green:
+  - Pistachio Green PLA:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/PistachioGreen.jpg
-      Quantity: 2
-  - Noctua Beige:
-      ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/NoctuaBeige.jpg
-      Quantity: 2
-  - Galaxy Purple:
+      Quantity: 4
+  - Galaxy Purple PLA:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/GalaxyPurple.jpg
       Quantity: 1
-  - Gentleman Grey:
+  - Gentleman Grey PLA:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/GentlemanGrey.jpg
       Quantity: 1
