@@ -101,6 +101,11 @@ body:
     - Gentleman Grey PLA
     default: 0
 
+- type: markdown
+  attributes:
+    value: |
+      [Photos of filament here.](https://github.com/uf-cpe-design-lab/build/tree/main/3d-print/filament-photos)
+
 - type: textarea
   id: notes
   attributes:
