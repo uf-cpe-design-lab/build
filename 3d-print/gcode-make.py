@@ -129,6 +129,8 @@ cmd = [
 
 if support:
     cmd.extend(support.split())
+if request["infill"] == "100%":
+    cmd.extend(["--fill-pattern", "rectilinear"])
 try:
     subprocess.run(cmd, check=True)
     # Time parsing
