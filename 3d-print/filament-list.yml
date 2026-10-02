@@ -1,4 +1,8 @@
 filament:
+  - White PLA:
+      ImageLink: example.org
+  - Black PLA:
+      ImageLink: example.org
   - Electric Green PETG:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ElectricGreen.jpg
       Quantity: 2
