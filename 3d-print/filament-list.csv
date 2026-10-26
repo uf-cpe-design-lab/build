@@ -1,0 +1,37 @@
+Filament,ImageLink,Quantity,Type
+White PLA,,,
+Black PLA,,,
+Electric Green PETG,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ElectricGreen.jpg,2,
+Natural PVA,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Natural.JPG,1,
+Noctua Beige PLA,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/NoctuaBeige.JPG,3,
+Galaxy Black PLA,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/GalaxyBlack.jpg,2,
+Mystic Brown PLA,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/MysticBrown.jpg,5,
+Natural TPU,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/NaturalTPU.JPG,1,
+Risotto pigment PLA,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/RisottoPigment.jpg,2,
+Clear neon green PETG,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ClearNeonGreen.jpg,1,
+Urban Grey PETG,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/UrbanGrey.jpg,3,
+Recycled PLA,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Recycled.jpg,1,
+Algae pigment rPLA,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/AlgaePigment.jpg,2,
+Corn pigment rPLA,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/CornPigment,2,
+Orange PETG for PPE,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Orange.jpg,1,
+Clear PETG,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Clear.jpg,1,
+Army Green Dark PLA,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ArmyGreenDark.jpg,1,
+Jet Black TPU 95A / PLA (Specify in notes),https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/JetBlack.jpg,2,"PLA, TPU 95A"
+Lipstick Red PLA / TPU 95A (Specify in notes),https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/LipstickRed.jpg,3,"PLA, TPU 95A"
+Prusa Orange PLA,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/PrusaOrange.jpg,1,
+Pistachio Green PLA,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/PistachioGreen.jpg,4,
+Galaxy Purple PLA,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/GalaxyPurple.jpg,1,
+Gentleman Grey PLA,https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/GentlemanGrey.jpg,1,
+Neon Green PETG Transparent,,2,PETG
+Mango Yellow PETG,,2,PETG
+Ocean Blue PETG,,2,PETG
+Jungle Green PETG,,2,PETG
+Prusa Orange PTEG,,3,PETG
+Lipstick Red PETG,,2,PETG
+Jet Black PETG,,1,PETG
+Azure Blue PLA,,1,PLA
+CMYK Magenta PLA,,1,PLA
+Galaxy Green PLA  Glitter,,1,PLA
+Emerald green PLA,,1,PLA
+ColorMix Yellow PLA,,1,PLA
+CMYK Yellow PLA,,1,PLA

@@ -151,12 +151,15 @@ try:
 except:
     with open("comment", "x", encoding="utf-8") as f:
         f.write("""
-Print Request Failed!
+Print Request Error!
 ----------------------------------------------
 There was either an issue with your .stl file or you submitted the wrong file!
 Please resubmit and ensure the following:
 1. Your file has the .stl extension
 2. You are submitting ONE file to be printed
 3. Your file is in a zip archive
+
+Your request has been submitted but please double check your files for correctness!
 """)
-        close_issue()
+        
+        add_to_project_queued(time, request["deadline"] if request["deadline"] else None)

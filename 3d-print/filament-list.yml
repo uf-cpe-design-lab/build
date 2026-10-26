@@ -1,8 +1,6 @@
 filament:
-  - White PLA:
-      ImageLink: example.org
-  - Black PLA:
-      ImageLink: example.org
+  - White PLA: {}
+  - Black PLA: {}
   - Electric Green PETG:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/ElectricGreen.jpg
       Quantity: 2
@@ -33,12 +31,12 @@ filament:
   - Recycled PLA:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Recycled.jpg
       Quantity: 1
-  - Algae pigment rPLA: 
+  - Algae pigment rPLA:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/AlgaePigment.jpg
       Quantity: 2
   - Corn pigment rPLA:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/CornPigment
-      Quantity: 2 
+      Quantity: 2
   - Orange PETG for PPE:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/Orange.jpg
       Quantity: 1
@@ -68,3 +66,42 @@ filament:
   - Gentleman Grey PLA:
       ImageLink: https://github.com/uf-cpe-design-lab/build/blob/main/3d-print/filament-photos/GentlemanGrey.jpg
       Quantity: 1
+  - Neon Green PETG Transparent:
+      Quantity: 2
+      Type: PETG
+  - Mango Yellow PETG:
+      Quantity: 2
+      Type: PETG
+  - Ocean Blue PETG:
+      Quantity: 2
+      Type: PETG
+  - Jungle Green PETG:
+      Quantity: 2
+      Type: PETG
+  - Prusa Orange PTEG:
+      Quantity: 3
+      Type: PETG
+  - Lipstick Red PETG:
+      Quantity: 2
+      Type: PETG
+  - Jet Black PETG:
+      Quantity: 1
+      Type: PETG
+  - Azure Blue PLA:
+      Quantity: 1
+      Type: PLA
+  - CMYK Magenta PLA:
+      Quantity: 1
+      Type: PLA
+  - Galaxy Green PLA  Glitter:
+      Quantity: 1
+      Type: PLA
+  - Emerald green PLA:
+      Quantity: 1
+      Type: PLA
+  - ColorMix Yellow PLA:
+      Quantity: 1
+      Type: PLA
+  - CMYK Yellow PLA:
+      Quantity: 1
+      Type: PLA
