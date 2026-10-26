@@ -101,6 +101,19 @@ body:
     - Pistachio Green PLA
     - Galaxy Purple PLA
     - Gentleman Grey PLA
+    - Neon Green PETG Transparent
+    - Mango Yellow PETG
+    - Ocean Blue PETG
+    - Jungle Green PETG
+    - Prusa Orange PTEG
+    - Lipstick Red PETG
+    - Jet Black PETG
+    - Azure Blue PLA
+    - CMYK Magenta PLA
+    - Galaxy Green PLA  Glitter
+    - Emerald green PLA
+    - ColorMix Yellow PLA
+    - CMYK Yellow PLA
     default: 0
 
 - type: markdown
