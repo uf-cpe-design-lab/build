@@ -79,10 +79,8 @@ body:
     label: Select a spool
     options:
     - Polymaker PolyDissolve, Natural
-    - Prusament  PLA, Lipstick Red
     - Prusament PETG Carbon Fiber, Black
     - Prusament PETG for PPE, Orange
-    - Prusament PETG, Clear
     - Prusament PETG, Clear
     - Prusament PETG, Electric Green
     - Prusament PETG, Jet Black
@@ -103,16 +101,17 @@ body:
     - Prusament PLA, Galaxy Purple
     - Prusament PLA, Gentleman's Grey
     - Prusament PLA, Jet Black
+    - Prusament PLA, Lipstick Red
     - Prusament PLA, Mystic Brown
     - Prusament PLA, Noctua Beige
-    - Prusament PLA, Pisatchio Green
+    - Prusament PLA, Pistachio Green
     - Prusament PLA, Pristine White
     - Prusament PLA, Prusa Galaxy Black
     - Prusament PLA, Prusa Orange
     - Prusament PLA, Recycled
-    - Prusament rPLA,  Risotto Pigment
     - Prusament rPLA, Algae Pigment
     - Prusament rPLA, Corn Pigment
+    - Prusament rPLA, Risotto Pigment
     - Prusament rPLA, Wine Pigment
     - Prusament TPU 95A, Jet Black
     - Prusament TPU 95A, Lipstick Red
