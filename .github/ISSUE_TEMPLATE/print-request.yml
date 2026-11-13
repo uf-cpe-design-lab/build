@@ -78,42 +78,45 @@ body:
   attributes:
     label: Select a spool
     options:
-    - White PLA
-    - Black PLA
-    - Electric Green PETG
-    - Natural PVA
-    - Noctua Beige PLA
-    - Galaxy Black PLA
-    - Mystic Brown PLA
-    - Natural TPU
-    - Risotto pigment PLA
-    - Clear neon green PETG
-    - Urban Grey PETG
-    - Recycled PLA
-    - Algae pigment rPLA
-    - Corn pigment rPLA
-    - Orange PETG for PPE
-    - Clear PETG
-    - Army Green Dark PLA
-    - Jet Black TPU 95A / PLA (Specify in notes)
-    - Lipstick Red PLA / TPU 95A (Specify in notes)
-    - Prusa Orange PLA
-    - Pistachio Green PLA
-    - Galaxy Purple PLA
-    - Gentleman Grey PLA
-    - Neon Green PETG Transparent
-    - Mango Yellow PETG
-    - Ocean Blue PETG
-    - Jungle Green PETG
-    - Prusa Orange PTEG
-    - Lipstick Red PETG
-    - Jet Black PETG
-    - Azure Blue PLA
-    - CMYK Magenta PLA
-    - Galaxy Green PLA  Glitter
-    - Emerald green PLA
-    - ColorMix Yellow PLA
-    - CMYK Yellow PLA
+    - Polymaker PolyDissolve, Natural
+    - Prusament  PLA, Lipstick Red
+    - Prusament PETG Carbon Fiber, Black
+    - Prusament PETG for PPE, Orange
+    - Prusament PETG, Clear
+    - Prusament PETG, Clear
+    - Prusament PETG, Electric Green
+    - Prusament PETG, Jet Black
+    - Prusament PETG, Jungle Green
+    - Prusament PETG, Lipstick Red
+    - Prusament PETG, Mango Yellow
+    - Prusament PETG, Neon Green
+    - Prusament PETG, Ocean Blue
+    - Prusament PETG, Prusa Orange
+    - Prusament PETG, Urban Grey
+    - Prusament PLA, Army Green
+    - Prusament PLA, Azure Blue
+    - Prusament PLA, CMYK Magenta
+    - Prusament PLA, CMYK Yellow
+    - Prusament PLA, ColorMix Yellow
+    - Prusament PLA, Emerald Green
+    - Prusament PLA, Galaxy Green
+    - Prusament PLA, Galaxy Purple
+    - Prusament PLA, Gentleman's Grey
+    - Prusament PLA, Jet Black
+    - Prusament PLA, Mystic Brown
+    - Prusament PLA, Noctua Beige
+    - Prusament PLA, Pisatchio Green
+    - Prusament PLA, Pristine White
+    - Prusament PLA, Prusa Galaxy Black
+    - Prusament PLA, Prusa Orange
+    - Prusament PLA, Recycled
+    - Prusament rPLA,  Risotto Pigment
+    - Prusament rPLA, Algae Pigment
+    - Prusament rPLA, Corn Pigment
+    - Prusament rPLA, Wine Pigment
+    - Prusament TPU 95A, Jet Black
+    - Prusament TPU 95A, Lipstick Red
+    - Prusament TPU 95A, Natural
     default: 0
 
 - type: markdown
