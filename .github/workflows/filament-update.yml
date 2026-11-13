@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - "3d-print/filament-list.yml"
+      - "3d-print/Roll-Catalog.xlsx"
 
 permissions:
   contents: write
@@ -21,7 +21,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install ruamel.yaml
+        run: pip install ruamel.yaml openpyxl
 
       - name: Sync options
         run: python 3d-print/sync_options.py
@@ -31,5 +31,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .github/ISSUE_TEMPLATE/print-request.yml
-          git diff --cached --quiet || git commit -m "chore: sync options from filament-list.yml"
+          git diff --cached --quiet || git commit -m "chore: sync options from Roll-Catalog.xlsx"
           git push
